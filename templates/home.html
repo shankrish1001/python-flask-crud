@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask - MySQL - CRUD</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+<div>
+    <div><h1>Flask - MySQL - CRUD</h1></div>
+    <div class="box0"><br></div>
+    <div class="box1">
+        <div style="width:50px">Id</div>
+        <div style="width:160px">FirstName</div>
+        <div style="width:160px">LastName</div>
+        <div style="width:50px">Age</div>
+        <div style="width:200px">Email</div>
+        <div style="width:100px">Mobile</div>
+
+    </div>
+
+    {% for row in rows %}
+    <div class="box1">
+        <div style="width:50px">{{ row[0] }}</div>
+        <div style="width:160px">{{ row[1] }}</div>
+        <div style="width:160px">{{ row[2] }}</div>
+        <div style="width:50px">{{ row[3] }}</div>
+        <div style="width:200px">{{ row[4] }}</div>
+        <div style="width:100px">{{ row[5] }}</div>
+    </div>
+    {% endfor %}
+
+
+
+</div>
+</body>
+</html>

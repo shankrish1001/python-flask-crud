@@ -1,0 +1,54 @@
+/* Reset CSS */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 900px;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  background-color: #eeeeee;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+}
+
+div {
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+.box1 {
+    display:inline;
+    border:1px solid #777;
+    margin-top: 40px;
+    margin-left: 100px;
+    padding: 8px;
+
+}
+
+.box1 div {
+    display: inline-block;
+    padding: 4px;
+    border: 1px solid #777;
+
+}
